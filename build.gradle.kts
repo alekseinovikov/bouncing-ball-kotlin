@@ -19,6 +19,9 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
 }
 
+val compileKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions.useIR = true
+
 tasks.test {
     useJUnitPlatform()
 }

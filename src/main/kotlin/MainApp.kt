@@ -17,7 +17,7 @@ import kotlin.system.exitProcess
 fun main(args: Array<String>) {
     JFrame("Universe").apply {
         extendedState = JFrame.MAXIMIZED_BOTH
-        add(MainApp(this, 7, 20, 5, 1000))
+        add(MainApp(this, 7, 20, 5, 1500))
         isResizable = true
         isUndecorated = true
         isVisible = true
@@ -46,8 +46,8 @@ class MainApp(
     private val ballsCount: Int
 ) : JPanel(), ActionListener {
 
-    private val ballWidth = 10
-    private val ballHeight = 10
+    private val ballWidth = 5
+    private val ballHeight = 5
     private var balls: List<Ball>? = null
 
     init {
